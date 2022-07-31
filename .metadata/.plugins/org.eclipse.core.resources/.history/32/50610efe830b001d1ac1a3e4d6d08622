@@ -1,0 +1,28 @@
+package mx.com.proyecti;
+
+import java.util.Date;
+
+// El nombre de la clase siempre empieza con mayúscula (UpperCamelCase)
+public class Employee {
+	//Datos
+	//nombrados iniciando con minúscula (lowerCamelCase
+	//Tipos de datos primitivis (int, boolean, float)
+	//Tipos de datos no primitivos (String, Integer, Double)
+	private int id;
+	private String name;
+	private String firstName;
+	private double salary;
+	private Date birthdate;
+	
+	//Métodos: empiezan con minúscula (lowerCamelCase)
+	//getters: métodos que me van a permitir acceder a los datos (lectura)
+	//setters: métodos que me van a permitir modificar los datos (escritura)
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+
+}

@@ -1,0 +1,18 @@
+package mx.com.proyecti;
+
+public class EmployeImpl {
+
+	public static void main(String[] args) {
+		Employee employee01 = new Employee();
+		
+		employee01.setId(1);
+		employee01.setFirstName("Victor");
+		employee01.setSalary(1000);
+		
+		System.out.println("El id del empleado 01 es " + employee01.getId());
+		System.out.println("El empleado " + employee01.getId() + 
+				" tiene el nombre de " + employee01.getFirstName());
+
+	}
+
+}

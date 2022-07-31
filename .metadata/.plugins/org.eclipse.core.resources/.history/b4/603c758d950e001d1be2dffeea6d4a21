@@ -1,0 +1,10 @@
+package mx.com.proyecti.collections;
+
+public class ListImpl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

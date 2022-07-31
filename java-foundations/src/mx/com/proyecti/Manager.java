@@ -1,0 +1,21 @@
+package mx.com.proyecti;
+
+import java.util.Date;
+
+public class Manager extends Employee {
+
+	private String deptName;
+
+	public String getDeptName() {
+		return deptName;
+	}
+
+	public void setDeptName(String deptName) {
+		this.deptName = deptName;
+	}
+	
+	public Manager(int id, String name, String lastName, double salary, Date birthdate, String deptName) {
+		super(id, name, lastName, salary, birthdate);
+		this.deptName = deptName;
+	}
+}

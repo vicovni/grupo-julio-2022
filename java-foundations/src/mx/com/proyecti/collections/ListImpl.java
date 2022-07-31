@@ -1,0 +1,21 @@
+package mx.com.proyecti.collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListImpl {
+
+	public static void main(String[] args) {
+		List<Integer> partList = new ArrayList<>();
+		
+		partList.add(new Integer(1111));
+		partList.add(new Integer(2222));
+		partList.add(new Integer(3333));
+		partList.add(new Integer(4444));
+		
+		System.out.println("First element " + partList.get(0)); // Primer elemento
+		
+
+	}
+
+}

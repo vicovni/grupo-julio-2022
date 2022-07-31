@@ -1,0 +1,22 @@
+package mx.com.proyecti;
+
+public class EmployeImpl {
+
+	public static void main(String[] args) {
+		Employee employee01 = new Employee();
+		
+		employee01.setId(1);
+		employee01.setFirstName("Victor");
+		employee01.setSalary(1000);
+		
+		int id = employee01.getId();
+		String nombre = employee01.getFirstName();
+		nombre = nombre.toUpperCase();
+		
+		System.out.println("El id del empleado 01 es " + id);
+		System.out.println("El empleado " + id + 
+				" tiene el nombre de " + nombre);
+
+	}
+
+}

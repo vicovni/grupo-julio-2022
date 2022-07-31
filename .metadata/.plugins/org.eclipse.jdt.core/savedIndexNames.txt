@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\vic_o\grupo-julio-2022\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+126712403.index
+1991655398.index

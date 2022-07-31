@@ -1,0 +1,10 @@
+package mx.com.proyecti.generics;
+
+public class GenericsImpl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
