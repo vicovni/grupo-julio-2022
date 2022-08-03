@@ -1,6 +1,7 @@
 package mx.com.proyecti;
 
 import java.util.Date;
+import java.util.List;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -54,6 +55,62 @@ public class EmployeeManager {
 		}
 		return employee;
 	}
+	
+	public List<Employee> listEmployees( ){ //SQL SELECT *
+		Session session = factory.openSession();
+		Transaction tx = null;
+		List<Employee> employees = null;
+
+		try {
+			tx = session.beginTransaction();
+			employees = session.createQuery("FROM Employee", Employee.class).getResultList(); //Ejecuta una consulta en HQL
+			tx.commit();
+		} catch (HibernateException e) {
+			if (tx!=null) tx.rollback();
+			e.printStackTrace(); 
+		} finally {
+			session.close(); 
+		}
+		return employees;
+	}
+
+	/* Method to UPDATE salary for an employee */
+	public void updateEmployee(long id, int salary ){ //SQL UPDATE
+		Session session = factory.openSession();
+		Transaction tx = null;
+
+		try {
+			tx = session.beginTransaction();
+			Employee employee = (Employee)session.get(Employee.class, id); 
+			employee.setSalary(salary);
+			session.persist(employee); ///upsert
+			tx.commit();
+		} catch (HibernateException e) {
+			if (tx!=null) tx.rollback();
+			e.printStackTrace(); 
+		} finally {
+			session.close(); 
+		}
+	}
+
+	/* Method to DELETE an employee from the records */
+	public void deleteEmployee(long id){ /// SQL DELETE
+		Session session = factory.openSession();
+		Transaction tx = null;
+
+		try {
+			tx = session.beginTransaction();
+			Employee employee = (Employee)session.get(Employee.class, id); 
+			session.remove(employee);
+			tx.commit();
+		} catch (HibernateException e) {
+			if (tx!=null) tx.rollback();
+			e.printStackTrace(); 
+		} finally {
+			session.close(); 
+		}
+	}
+
 	
 
 }
