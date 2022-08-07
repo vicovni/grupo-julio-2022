@@ -1,5 +1,8 @@
 package mx.com.proyecti;
 
+import java.util.Date;
+import java.util.List;
+
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
@@ -19,6 +22,36 @@ public class EmployeeSoap {
 	@WebMethod
 	public Employee readEmployee(@WebParam(name="id") Long id) {
 		return manager.getEmployee(id);
+	}
+	
+	@WebMethod
+	public Long addEmployee(
+			@WebParam(name="firstName") String firstName,
+			@WebParam(name="lastName") String lastName,
+			@WebParam(name="birthdate") Date birthdate,
+			@WebParam(name="salary") Double salary,
+			@WebParam(name="phone") String phone,
+			@WebParam(name="email") String email
+			) {
+		return manager.addEmployee(firstName, lastName, birthdate, salary, phone, email);
+	}
+	
+	@WebMethod
+	public void updateEmployee(
+			@WebParam(name="id")Long id, 
+			@WebParam(name="salary") Double salary) {
+		manager.updateEmployee(id, salary);
+	}
+	
+	@WebMethod
+	public void deleteEmployee(
+			@WebParam (name="id")Long id) {
+	 manager.deleteEmployee(id);	
+	}
+	
+	@WebMethod
+	public List<Employee> listEmployee(){
+		return manager.listEmployees();
 	}
 	
 	//TODO: 

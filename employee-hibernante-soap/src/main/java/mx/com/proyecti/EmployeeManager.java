@@ -75,7 +75,7 @@ public class EmployeeManager {
 	}
 
 	/* Method to UPDATE salary for an employee */
-	public void updateEmployee(long id, int salary ){ //SQL UPDATE
+	public void updateEmployee(long id, double salary ){ //SQL UPDATE
 		Session session = factory.openSession();
 		Transaction tx = null;
 

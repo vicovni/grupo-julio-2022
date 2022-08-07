@@ -1,7 +1,0 @@
-package mx.com.proyecti;
-
-public class GoodBonus {
-	public static double getBonusPercent(Employee emp) {
-		return 0;
-	}
-}

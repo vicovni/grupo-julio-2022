@@ -2,7 +2,32 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="mx.com.proyecti.Manager"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="demo.Foo"/>
     <fullyQualifiedTypeName name="mx.com.proyecti.GoodBonus"/>
+    <fullyQualifiedTypeName name="mx.com.proyecti.generics.CacheString"/>
+    <fullyQualifiedTypeName name="mx.com.proyecti.generics.CacheShit"/>
+    <fullyQualifiedTypeName name="mx.com.proyecti.generics.CacheAny"/>
+    <fullyQualifiedTypeName name="mx.com.proyecti.generics.Shirt"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.SequenceGenerator"/>
+    <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+    <fullyQualifiedTypeName name="org.hibernate.Session"/>
+    <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+    <fullyQualifiedTypeName name="org.hibernate.HibernateException"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="javax.xml.ws.Endpoint"/>
+    <fullyQualifiedTypeName name="mx.com.proyecti.Greeter"/>
+    <fullyQualifiedTypeName name="javax.jws.WebService"/>
+    <fullyQualifiedTypeName name="mx.com.proyecti.EmployeeManager"/>
+    <fullyQualifiedTypeName name="mx.com.proyecti.entity.Employee"/>
+    <fullyQualifiedTypeName name="javax.jws.WebMethod"/>
+    <fullyQualifiedTypeName name="javax.jws.WebParam"/>
+    <fullyQualifiedTypeName name="mx.com.proyecti.EmployeeSoap"/>
 </qualifiedTypeNameHistroy>
